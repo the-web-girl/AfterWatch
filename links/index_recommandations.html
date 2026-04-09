@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AfterWatch — Ma liste de films vus, avec mes notes personnelles.">
-  <title>Mes films — AfterWatch</title>
+  <meta name="description" content="AfterWatch — Recommandations cinéma sélectionnées par notre équipe.">
+  <title>Recommandations — AfterWatch</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
@@ -41,8 +41,8 @@
       <li><a href="../index_accueil.html">Accueil</a></li>
       <li><a href="index_a_l_affiche.html">À l'affiche</a></li>
       <li><a href="index_futures_sorties.html">Futures sorties</a></li>
-      <li><a href="index_recommandations.html">Recommandations</a></li>
-      <li><a href="index_mes_films.html" aria-current="page">Mes films</a></li>
+      <li><a href="index_recommandations.html" aria-current="page">Recommandations</a></li>
+      <li><a href="index_mes_films.html">Mes films</a></li>
     </ul>
   </nav>
 
@@ -50,60 +50,53 @@
 
     <div class="page-hero">
       <div class="page-hero-inner">
-        <h1>Mes <span>films</span></h1>
-        <p>Votre liste personnelle de films vus</p>
+        <h1>Nos <span>recommandations</span></h1>
+        <p>Une sélection soignée par l'équipe AfterWatch</p>
       </div>
     </div>
 
     <nav aria-label="Fil d'Ariane">
       <ol class="breadcrumb">
         <li><a href="../index_accueil.html">Accueil</a></li>
-        <li><span aria-current="page">Mes films</span></li>
+        <li><span aria-current="page">Recommandations</span></li>
       </ol>
     </nav>
 
-    <section class="section" aria-labelledby="titre-mes-films">
+    <section class="section" aria-labelledby="titre-reco">
+      <h2 class="section-title" id="titre-reco">Films <span>à ne pas manquer</span></h2>
 
-      <div class="section-header">
-        <h2 class="section-title" id="titre-mes-films">Films <span>vus</span>
-          <span style="font-size:1rem; color:var(--clr-text-muted); font-family:var(--font-body); margin-left:0.5rem">(8 films)</span>
-        </h2>
-      </div>
-
-      <!-- Message si non connecté -->
-      <div role="status" aria-live="polite" style="background:var(--clr-surface);border:1px solid var(--clr-border);border-radius:var(--radius-lg);padding:1.5rem;margin-bottom:2rem;text-align:center">
-        <p style="color:var(--clr-text-muted);margin-bottom:1rem">
-          <strong style="color:var(--clr-text)">Connectez-vous</strong> pour retrouver votre liste personnelle et noter les films.
-        </p>
-        <div style="display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap">
-          <a href="form_co_js.html" class="btn btn-primary">Se connecter</a>
-          <a href="form_inscr_js.html" class="btn btn-outline">Créer un compte</a>
-        </div>
-      </div>
-
-      <ul class="film-list-full" aria-label="Mes films vus">
+      <ul class="film-list-full" aria-label="Liste des films recommandés" style="margin-top:1.5rem">
 
         <li class="film-card">
           <div class="film-card-img">
-            <img src="../img/0199399.jpg.webp" alt="Affiche du film Oppenheimer" loading="lazy">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Past Lives" loading="lazy">
           </div>
           <div class="film-card-body">
-            <p class="film-card-title"><a href="index_infos_film.html">Oppenheimer</a></p>
-            <p class="film-card-meta">Biopic · 2023</p>
-            <p class="star-rating" aria-label="Ma note : 5 étoiles sur 5"><span aria-hidden="true">★★★★★</span></p>
-            <span class="badge badge-vu">Vu</span>
+            <p class="film-card-title"><a href="index_infos_film.html">Past Lives</a></p>
+            <p class="film-card-meta">Romance · Celine Song · 2023</p>
+            <p class="star-rating" aria-label="Note : 5 étoiles sur 5"><span aria-hidden="true">★★★★★</span></p>
           </div>
         </li>
 
         <li class="film-card">
           <div class="film-card-img">
-            <img src="../img/0199399.jpg.webp" alt="Affiche du film Barbie" loading="lazy">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Anatomie d'une chute" loading="lazy">
           </div>
           <div class="film-card-body">
-            <p class="film-card-title"><a href="index_infos_film.html">Barbie</a></p>
-            <p class="film-card-meta">Comédie · 2023</p>
-            <p class="star-rating" aria-label="Ma note : 4 étoiles sur 5"><span aria-hidden="true">★★★★☆</span></p>
-            <span class="badge badge-vu">Vu</span>
+            <p class="film-card-title"><a href="index_infos_film.html">Anatomie d'une chute</a></p>
+            <p class="film-card-meta">Drame · Justine Triet · 2023</p>
+            <p class="star-rating" aria-label="Note : 5 étoiles sur 5"><span aria-hidden="true">★★★★★</span></p>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film La Zone d'intérêt" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">La Zone d'intérêt</a></p>
+            <p class="film-card-meta">Drame · Jonathan Glazer · 2023</p>
+            <p class="star-rating" aria-label="Note : 5 étoiles sur 5"><span aria-hidden="true">★★★★★</span></p>
           </div>
         </li>
 
@@ -113,9 +106,8 @@
           </div>
           <div class="film-card-body">
             <p class="film-card-title"><a href="index_infos_film.html">Poor Things</a></p>
-            <p class="film-card-meta">Fantastique · 2023</p>
-            <p class="star-rating" aria-label="Ma note : 4 étoiles sur 5"><span aria-hidden="true">★★★★☆</span></p>
-            <span class="badge badge-vu">Vu</span>
+            <p class="film-card-meta">Fantastique · Yorgos Lanthimos · 2023</p>
+            <p class="star-rating" aria-label="Note : 4 étoiles sur 5"><span aria-hidden="true">★★★★☆</span></p>
           </div>
         </li>
 
@@ -125,45 +117,52 @@
           </div>
           <div class="film-card-body">
             <p class="film-card-title"><a href="index_infos_film.html">The Holdovers</a></p>
-            <p class="film-card-meta">Comédie dramatique · 2023</p>
-            <p class="star-rating" aria-label="Ma note : 5 étoiles sur 5"><span aria-hidden="true">★★★★★</span></p>
-            <span class="badge badge-vu">Vu</span>
+            <p class="film-card-meta">Comédie · Alexander Payne · 2023</p>
+            <p class="star-rating" aria-label="Note : 5 étoiles sur 5"><span aria-hidden="true">★★★★★</span></p>
           </div>
         </li>
 
         <li class="film-card">
           <div class="film-card-img">
-            <img src="../img/0199399.jpg.webp" alt="Affiche du film Saltburn" loading="lazy">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Oppenheimer" loading="lazy">
           </div>
           <div class="film-card-body">
-            <p class="film-card-title"><a href="index_infos_film.html">Saltburn</a></p>
-            <p class="film-card-meta">Thriller · 2023</p>
-            <p class="star-rating" aria-label="Ma note : 3 étoiles sur 5"><span aria-hidden="true">★★★☆☆</span></p>
-            <span class="badge badge-vu">Vu</span>
+            <p class="film-card-title"><a href="index_infos_film.html">Oppenheimer</a></p>
+            <p class="film-card-meta">Biopic · Christopher Nolan · 2023</p>
+            <p class="star-rating" aria-label="Note : 5 étoiles sur 5"><span aria-hidden="true">★★★★★</span></p>
           </div>
         </li>
 
         <li class="film-card">
           <div class="film-card-img">
-            <img src="../img/0199399.jpg.webp" alt="Affiche du film Priscilla" loading="lazy">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film La Société des neiges" loading="lazy">
           </div>
           <div class="film-card-body">
-            <p class="film-card-title"><a href="index_infos_film.html">Priscilla</a></p>
-            <p class="film-card-meta">Biopic · 2023</p>
-            <p class="star-rating" aria-label="Ma note : 4 étoiles sur 5"><span aria-hidden="true">★★★★☆</span></p>
-            <span class="badge badge-vu">Vu</span>
+            <p class="film-card-title"><a href="index_infos_film.html">La Société des neiges</a></p>
+            <p class="film-card-meta">Survival · J. A. Bayona · 2023</p>
+            <p class="star-rating" aria-label="Note : 4 étoiles sur 5"><span aria-hidden="true">★★★★☆</span></p>
           </div>
         </li>
 
         <li class="film-card">
           <div class="film-card-img">
-            <img src="../img/0199399.jpg.webp" alt="Affiche du film Napoléon" loading="lazy">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film American Fiction" loading="lazy">
           </div>
           <div class="film-card-body">
-            <p class="film-card-title"><a href="index_infos_film.html">Napoléon</a></p>
-            <p class="film-card-meta">Épique · 2023</p>
-            <p class="star-rating" aria-label="Ma note : 3 étoiles sur 5"><span aria-hidden="true">★★★☆☆</span></p>
-            <span class="badge badge-vu">Vu</span>
+            <p class="film-card-title"><a href="index_infos_film.html">American Fiction</a></p>
+            <p class="film-card-meta">Comédie · Cord Jefferson · 2023</p>
+            <p class="star-rating" aria-label="Note : 4 étoiles sur 5"><span aria-hidden="true">★★★★☆</span></p>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Maestro" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Maestro</a></p>
+            <p class="film-card-meta">Biopic · Bradley Cooper · 2023</p>
+            <p class="star-rating" aria-label="Note : 4 étoiles sur 5"><span aria-hidden="true">★★★★☆</span></p>
           </div>
         </li>
 
@@ -173,13 +172,21 @@
           </div>
           <div class="film-card-body">
             <p class="film-card-title"><a href="index_infos_film.html">Dune : Deuxième Partie</a></p>
-            <p class="film-card-meta">Science-fiction · 2024</p>
-            <p class="star-rating" aria-label="Ma note : 5 étoiles sur 5"><span aria-hidden="true">★★★★★</span></p>
-            <span class="badge badge-vu">Vu</span>
+            <p class="film-card-meta">Science-fiction · Denis Villeneuve · 2024</p>
+            <p class="star-rating" aria-label="Note : 5 étoiles sur 5"><span aria-hidden="true">★★★★★</span></p>
           </div>
         </li>
 
       </ul>
+
+      <nav aria-label="Pagination des recommandations">
+        <ul class="pagination">
+          <li><span aria-hidden="true">‹</span></li>
+          <li><a href="#" aria-current="page" class="current" aria-label="Page 1">1</a></li>
+          <li><a href="#" aria-label="Page 2">2</a></li>
+          <li><a href="#" aria-label="Page suivante">›</a></li>
+        </ul>
+      </nav>
     </section>
 
   </main>
