@@ -1,235 +1,334 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="AfterWatch — Contactez l'équipe AfterWatch pour toute question ou suggestion.">
-  <title>Nous contacter — AfterWatch</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
 
-  <a class="skip-nav" href="#contenu-principal">Aller au contenu principal</a>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans&display=swap%27');
+*
+{
+    font-family: Courgette;
+} 
+.titre
+{
+    text-align: center;
+    font-size: 5em;
+    font-weight: bold;
+    animation:myanimation 3s infinite;
+}
+@keyframes myanimation{
+                0%{color:#008791;}
+                10%{color:#009140;}
+                25%{color:#009150;}
+                35%{color: #009160;}
+                50%{color:#009170;}
+                75%{color:#009180;}
+                100%{color: #009193;}
+                }
+*, body
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #e7e7e7;
+    color: #009193;
+}
+.container
+{
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+}
+.img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.login-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+.img img {
+    width: 500px;
+}
+form {
+    width: 360px;
+}
+.login-content img {
+    height: 100px;
+}
+.login-content h2 {
+    margin: 15px 0;
+    color: #009193;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.login-content .input-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid grey;
+}
+.login-content .input-div.one {
+    margin-top: 0;
+}
+.login-content .input-div.two {
+    height: 80px;
+    margin-top: 0;
+}
+textarea
+{
+    height: 50px;
+    margin-left: 20%;
+    background-color: transparent;
+}
+.i {
+    color: #e7e7e7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.i i {
+    transition: .3s;
+}
 
-  <header class="site-header" role="banner">
-    <div class="header-inner">
-      <a href="../index_accueil.html" class="site-logo" aria-label="AfterWatch — Retour à l'accueil">
-        <img src="../img/afterwatch_logo.png" alt="AfterWatch" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
-        <span class="site-logo-text" style="display:none">AFTERWATCH</span>
-      </a>
-      <form class="search-form" role="search" action="#" method="get">
-        <label for="recherche">Rechercher un film</label>
-        <input type="search" id="recherche" name="q" class="search-input" placeholder="Titre, réalisateur…" autocomplete="off">
-        <button type="submit" class="search-btn" aria-label="Lancer la recherche">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        </button>
-      </form>
-      <nav class="auth-links" aria-label="Connexion et inscription">
-        <a href="form_co_js.html" class="btn btn-outline">Connexion</a>
-        <a href="form_inscr_js.html" class="btn btn-primary">Inscription</a>
-      </nav>
-      <button class="nav-toggle" id="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-      </button>
-    </div>
-  </header>
+.input-div>div {
+    position: relative;
+    height: 45px;
+}
 
-  <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
-    <ul class="nav-list" role="list">
-      <li><a href="../index_accueil.html">Accueil</a></li>
-      <li><a href="index_a_l_affiche.html">À l'affiche</a></li>
-      <li><a href="index_futures_sorties.html">Futures sorties</a></li>
-      <li><a href="index_recommandations.html">Recommandations</a></li>
-      <li><a href="index_mes_films.html">Mes films</a></li>
-    </ul>
-  </nav>
+.input-div>div>h5 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #009193;
+    font-size: 18px;
+    transition: .3s;
+}
+.input-div:before,
+.input-div:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #009193;
+    transition: .4s;
+}
+.input-div:before {
+    right: 50%;
+}
+.input-div:after {
+    left: 50%;
+}
+.input-div.focus:before,
+.input-div.focus:after {
+    width: 50%;
+}
+.input-div.focus>div>h5 {
+    top: -5px;
+    font-size: 15px;
+}
+.input-div.focus>.i>i {
+    color: #009193;
+}
+.input-div>div>input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1rem;
+    color: grey;
+}
+.input-div.pass {
+    margin-bottom: 4px;
+}
+a {
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #009195;
+    font-size: 0.9rem;
+    transition: .3s;
+}
+a:hover {
+    color: #38d39f;
+}
+.ButtonContainer
+{
+    background: transparent;
+    border: #e7e7e7;
+}
+.btn {
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #009170, #009195, #009193);
+    background-size: 200%;
+    font-size: 1.2rem;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover {
+    background-position: right;
+}
 
-  <main id="contenu-principal" class="main-content">
-
-    <div class="page-hero">
-      <div class="page-hero-inner">
-        <h1>Nous <span>contacter</span></h1>
-        <p>Une question, un bug, une suggestion ? On vous répond sous 48h.</p>
-      </div>
-    </div>
-
-    <nav aria-label="Fil d'Ariane">
-      <ol class="breadcrumb">
-        <li><a href="../index_accueil.html">Accueil</a></li>
-        <li><span aria-current="page">Nous contacter</span></li>
-      </ol>
-    </nav>
-
-    <section class="section" aria-labelledby="titre-contact" style="max-width:700px">
-      <h2 class="section-title sr-only" id="titre-contact">Formulaire de contact</h2>
-
-      <div
-        id="alert-success"
-        class="alert alert-success"
-        role="status"
-        aria-live="polite"
-        hidden
-      >
-        Votre message a bien été envoyé. Nous vous répondrons dans les meilleurs délais.
-      </div>
-
-      <div
-        style="background:var(--clr-surface);border:1px solid var(--clr-border);border-radius:var(--radius-lg);padding:2rem"
-      >
-        <form
-          id="form-contact"
-          action="#"
-          method="post"
-          data-validate
-          novalidate
-          aria-label="Formulaire de contact AfterWatch"
-        >
-          <p class="form-required-note">
-            Les champs marqués d'un <abbr title="obligatoire">*</abbr> sont obligatoires.
-          </p>
-
-          <!-- Pseudo / Prénom -->
-          <div class="form-group">
-            <label for="pseudo">
-              Votre nom ou pseudo
-              <span class="required-indicator" aria-label="obligatoire">*</span>
-            </label>
-            <input
-              type="text"
-              id="pseudo"
-              name="pseudo"
-              class="form-control"
-              autocomplete="name"
-              required
-              aria-required="true"
-              placeholder="Jean Dupont"
-            >
-            <p class="form-error" id="pseudo-error" role="alert"></p>
-          </div>
-
-          <!-- E-mail -->
-          <div class="form-group">
-            <label for="email">
-              Adresse e-mail
-              <span class="required-indicator" aria-label="obligatoire">*</span>
-            </label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="form-control"
-              autocomplete="email"
-              required
-              aria-required="true"
-              placeholder="exemple@domaine.fr"
-              inputmode="email"
-            >
-            <p class="form-error" id="email-error" role="alert"></p>
-          </div>
-
-          <!-- Sujet -->
-          <div class="form-group">
-            <label for="sujet">Sujet</label>
-            <select id="sujet" name="sujet" class="form-control">
-              <option value="">-- Choisir un sujet --</option>
-              <option value="bug">Signaler un bug</option>
-              <option value="suggestion">Suggestion d'amélioration</option>
-              <option value="contenu">Erreur dans le contenu</option>
-              <option value="compte">Problème de compte</option>
-              <option value="autre">Autre</option>
-            </select>
-          </div>
-
-          <!-- Message -->
-          <div class="form-group">
-            <label for="message">
-              Message
-              <span class="required-indicator" aria-label="obligatoire">*</span>
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              class="form-control"
-              required
-              aria-required="true"
-              placeholder="Décrivez votre demande en détail…"
-              maxlength="2000"
-              aria-describedby="message-hint"
-            ></textarea>
-            <p class="form-hint" id="message-hint">Maximum 2 000 caractères.</p>
-            <p class="form-error" id="message-error" role="alert"></p>
-          </div>
-
-          <button type="submit" class="btn btn-primary form-submit" id="submit-btn">
-            Envoyer le message
-          </button>
-        </form>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
-      <div class="footer-brand">
-        <p class="site-logo-text">AFTERWATCH</p>
-        <p>Votre compagnon cinéma : suivez les sorties, gérez votre liste et découvrez les meilleures recommandations.</p>
-      </div>
-      <div class="footer-col">
-        <h3>Navigation</h3>
-        <ul class="footer-nav" role="list">
-          <li><a href="index_a_l_affiche.html">À l'affiche</a></li>
-          <li><a href="index_futures_sorties.html">Futures sorties</a></li>
-          <li><a href="index_recommandations.html">Recommandations</a></li>
-          <li><a href="index_mes_films.html">Mes films</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>Compte</h3>
-        <ul class="footer-nav" role="list">
-          <li><a href="form_co_js.html">Connexion</a></li>
-          <li><a href="form_inscr_js.html">Inscription</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h3>AfterWatch</h3>
-        <ul class="footer-nav" role="list">
-          <li><a href="#">À propos</a></li>
-          <li><a href="form_contact_js.html">Nous contacter</a></li>
-          <li><a href="#">Conditions d'utilisation</a></li>
-          <li><a href="#">Forum</a></li>
-          <li><a href="#">Déclaration d'accessibilité</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2024 AfterWatch. Tous droits réservés.</span>
-      <span>Site conforme RGAA 4.1</span>
-    </div>
-  </footer>
-
-  <script src="../js/main.js"></script>
-  <script>
-    // Simulation envoi formulaire contact
-    const form = document.getElementById('form-contact');
-    const alertSuccess = document.getElementById('alert-success');
-    const submitBtn = document.getElementById('submit-btn');
-    if (form && alertSuccess) {
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        setTimeout(() => {
-          if (!form.querySelector('.is-invalid')) {
-            alertSuccess.hidden = false;
-            form.reset();
-            alertSuccess.focus();
-            submitBtn.disabled = true;
-            submitBtn.textContent = 'Message envoyé ✓';
-          }
-        }, 50);
-      });
+@media screen and (max-width: 1050px) {
+    .container {
+        grid-gap: 5rem;
     }
-  </script>
+}
+
+@media screen and (max-width: 1000px) {
+    form {
+        width: 290px;
+    }
+    .login-content h2 {
+        font-size: 2.4rem;
+        margin: 8px 0;
+    }
+    .img img {
+        width: 400px;
+    }
+    .titre
+    {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    animation:myanimation 3s infinite;
+    font-family: Courgette;
+    }
+    .container{
+        background-color: transparent;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .img {
+        display: none;
+    }
+    .wave {
+        display: none;
+    }
+    .login-content {
+        justify-content: center;
+    }
+}
+</style>    
+</head>
+
+<body>
+<div class="titresite">
+        <h1 class="titre">AfterWatch</h1>
+</div> 
+
+    <div class="container">
+        <div class="img">
+
+        </div>
+        <div class="login-content">
+            <form action="index.html">
+
+                <h2 class="title">Nous Contacter</h2>
+
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Pseudo</h5>
+                        <input type="text" class="input" name="user_name">
+                    </div>
+                </div>
+
+                <div class="input-div one">
+                    <div class="i">
+                        <i class="fas fa-at"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Email</h5>
+                        <input type="text" class="input" name="user_mail">
+                    </div>
+                </div>
+                  
+                <div class="input-div two">
+                    <div class="i">
+                        <i class="fas fa-pencil-alt"></i>
+                    </div>
+                    <div class="div">
+                        <h5>Message</h5>
+                        <input type="text" class="input" name="user_message">
+                    </div>
+                </div>
+
+                <div class="input-div one">
+                    <div class="PopupSupport__Button">
+                    <button class="ButtonContainer PopupSupport__ButtonFile">
+                    <input type="file" accept="image" name="file" multiple="" class="PopupSupport__InputFile"></button>
+                </div>
+                </div>
+                <div>
+                <input type="submit" class="btn" value="Envoyer"><input class="button btn flexbutton" type="button" value="Retour" onclick="history.go(-1)">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+<script>
+    const inputs = document.querySelectorAll(".input");
+
+
+function addcl(){
+	let parent = this.parentNode.parentNode;
+	parent.classList.add("focus");
+}
+
+function remcl(){
+	let parent = this.parentNode.parentNode;
+	if(this.value == ""){
+		parent.classList.remove("focus");
+	}
+}
+
+
+inputs.forEach(input => {
+	input.addEventListener("focus", addcl);
+	input.addEventListener("blur", remcl);
+});
+</script>    
 </body>
+
 </html>

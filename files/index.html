@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AfterWatch — Découvrez les films à l'affiche, les futures sorties et gérez votre liste de films vus.">
+  <title>Accueil — AfterWatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Lien d'évitement (RGAA 12.7) -->
+  <a class="skip-nav" href="#contenu-principal">Aller au contenu principal</a>
+
+  <!-- ===== EN-TÊTE ===== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index_accueil.html" class="site-logo" aria-label="AfterWatch — Retour à l'accueil">
+        <img src="img/afterwatch_logo.png" alt="AfterWatch" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="site-logo-text" style="display:none">AFTERWATCH</span>
+      </a>
+
+      <form class="search-form" role="search" action="#" method="get">
+        <label for="recherche">Rechercher un film</label>
+        <input
+          type="search"
+          id="recherche"
+          name="q"
+          class="search-input"
+          placeholder="Titre, réalisateur…"
+          autocomplete="off"
+          aria-label="Rechercher un film"
+        >
+        <button type="submit" class="search-btn" aria-label="Lancer la recherche">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+          </svg>
+        </button>
+      </form>
+
+      <nav class="auth-links" aria-label="Connexion et inscription">
+        <a href="links/form_co_js.html" class="btn btn-outline">Connexion</a>
+        <a href="links/form_inscr_js.html" class="btn btn-primary">Inscription</a>
+      </nav>
+
+      <button
+        class="nav-toggle"
+        id="nav-toggle"
+        aria-controls="main-nav"
+        aria-expanded="false"
+        aria-label="Ouvrir le menu de navigation"
+      >
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false">
+          <line x1="3" y1="6" x2="21" y2="6"/>
+          <line x1="3" y1="12" x2="21" y2="12"/>
+          <line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== NAVIGATION PRINCIPALE ===== -->
+  <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+    <ul class="nav-list" role="list">
+      <li><a href="index_accueil.html" aria-current="page">Accueil</a></li>
+      <li><a href="links/index_a_l_affiche.html">À l'affiche</a></li>
+      <li><a href="links/index_futures_sorties.html">Futures sorties</a></li>
+      <li><a href="links/index_recommandations.html">Recommandations</a></li>
+      <li><a href="links/index_mes_films.html">Mes films</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <main id="contenu-principal" class="main-content">
+
+    <!-- Carousel hero -->
+    <section
+      aria-label="Films mis en avant"
+      class="hero-carousel"
+      id="carousel"
+      aria-roledescription="carrousel"
+    >
+      <div
+        class="carousel-track"
+        id="carousel-track"
+        aria-live="polite"
+        aria-atomic="false"
+      >
+        <!-- Slide 1 -->
+        <article
+          class="carousel-slide"
+          aria-label="Dune : Deuxième Partie, diapositive 1 sur 4"
+          aria-roledescription="diapositive"
+        >
+          <img
+            src="img/01.jpg"
+            alt="Affiche du film Dune : Deuxième Partie — paysages désertiques et personnages épiques"
+            loading="eager"
+          >
+          <div class="carousel-caption">
+            <h2>Dune : Deuxième Partie</h2>
+            <p>Paul Atreides s'unit aux Fremen pour venger sa famille et façonner le destin de l'univers.</p>
+            <a href="links/index_infos_film.html" class="btn btn-primary">Voir le film</a>
+          </div>
+        </article>
+
+        <!-- Slide 2 -->
+        <article
+          class="carousel-slide"
+          aria-label="Oppenheimer, diapositive 2 sur 4"
+          aria-roledescription="diapositive"
+          aria-hidden="true"
+        >
+          <img
+            src="img/02.jpg"
+            alt="Affiche du film Oppenheimer — portrait dramatique du physicien"
+            loading="lazy"
+          >
+          <div class="carousel-caption">
+            <h2>Oppenheimer</h2>
+            <p>L'histoire du père de la bombe atomique et du dilemme moral qui changea le monde.</p>
+            <a href="links/index_infos_film.html" class="btn btn-primary">Voir le film</a>
+          </div>
+        </article>
+
+        <!-- Slide 3 -->
+        <article
+          class="carousel-slide"
+          aria-label="Poor Things, diapositive 3 sur 4"
+          aria-roledescription="diapositive"
+          aria-hidden="true"
+        >
+          <img
+            src="img/03.jpg"
+            alt="Affiche du film Poor Things — univers fantastico-victorien coloré"
+            loading="lazy"
+          >
+          <div class="carousel-caption">
+            <h2>Poor Things</h2>
+            <p>Le conte gothique et féministe de Yorgos Lanthimos, Palme d'Or 2023.</p>
+            <a href="links/index_infos_film.html" class="btn btn-primary">Voir le film</a>
+          </div>
+        </article>
+
+        <!-- Slide 4 -->
+        <article
+          class="carousel-slide"
+          aria-label="Anatomie d'une chute, diapositive 4 sur 4"
+          aria-roledescription="diapositive"
+          aria-hidden="true"
+        >
+          <img
+            src="img/04.jpg"
+            alt="Affiche du film Anatomie d'une chute — drame judiciaire français"
+            loading="lazy"
+          >
+          <div class="carousel-caption">
+            <h2>Anatomie d'une chute</h2>
+            <p>Un thriller judiciaire haletant, Palme d'Or Cannes 2023.</p>
+            <a href="links/index_infos_film.html" class="btn btn-primary">Voir le film</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- Points de navigation -->
+      <div class="carousel-dots" role="tablist" aria-label="Sélectionner une diapositive">
+        <button class="carousel-dot active" role="tab" aria-selected="true" aria-label="Diapositive 1 : Dune" aria-controls="carousel" data-index="0"></button>
+        <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Diapositive 2 : Oppenheimer" data-index="1"></button>
+        <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Diapositive 3 : Poor Things" data-index="2"></button>
+        <button class="carousel-dot" role="tab" aria-selected="false" aria-label="Diapositive 4 : Anatomie d'une chute" data-index="3"></button>
+      </div>
+
+      <!-- Boutons précédent / suivant -->
+      <div class="carousel-controls">
+        <button class="carousel-btn" id="carousel-prev" aria-label="Diapositive précédente" aria-controls="carousel">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><polyline points="15 18 9 12 15 6"/></svg>
+        </button>
+        <button class="carousel-btn" id="carousel-next" aria-label="Diapositive suivante" aria-controls="carousel">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><polyline points="9 6 15 12 9 18"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <!-- ===== SECTION À L'AFFICHE ===== -->
+    <section class="section" aria-labelledby="titre-affiche">
+      <div class="section-header">
+        <h2 class="section-title" id="titre-affiche"><span>Actuellement</span> à l'affiche</h2>
+        <a href="links/index_a_l_affiche.html" class="see-all" aria-label="Voir tous les films à l'affiche">Tout voir</a>
+      </div>
+
+      <ul class="film-grid" aria-label="Films actuellement à l'affiche">
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Mais qu'est-ce que j'ai fait au bon Dieu ?">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title">
+              <a href="links/index_infos_film.html">Mais qu'est-ce que j'ai fait au bon Dieu ?</a>
+            </p>
+            <p class="film-card-meta">Comédie · 2014</p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Dune : Deuxième Partie">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Dune : Deuxième Partie</a></p>
+            <p class="film-card-meta">Science-fiction · 2024</p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Oppenheimer">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Oppenheimer</a></p>
+            <p class="film-card-meta">Biopic · 2023</p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Poor Things">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Poor Things</a></p>
+            <p class="film-card-meta">Fantastique · 2023</p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Anatomie d'une chute">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Anatomie d'une chute</a></p>
+            <p class="film-card-meta">Drame · 2023</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <hr class="divider" aria-hidden="true">
+
+    <!-- ===== SECTION FUTURES SORTIES ===== -->
+    <section class="section" aria-labelledby="titre-futures">
+      <div class="section-header">
+        <h2 class="section-title" id="titre-futures">Les <span>futures</span> sorties</h2>
+        <a href="links/index_futures_sorties.html" class="see-all" aria-label="Voir toutes les futures sorties">Tout voir</a>
+      </div>
+
+      <ul class="film-grid" aria-label="Prochains films à venir">
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Furiosa : une saga Mad Max">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Furiosa : une saga Mad Max</a></p>
+            <p class="film-card-meta">Action · Mai 2024</p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Inside Out 2">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Vice-Versa 2</a></p>
+            <p class="film-card-meta">Animation · Juin 2024</p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Alien : Romulus">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Alien : Romulus</a></p>
+            <p class="film-card-meta">Horreur · Août 2024</p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Joker : Folie à Deux">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Joker : Folie à Deux</a></p>
+            <p class="film-card-meta">Drame · Oct. 2024</p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Beetlejuice Beetlejuice">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Beetlejuice Beetlejuice</a></p>
+            <p class="film-card-meta">Comédie fantastique · Sept. 2024</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <hr class="divider" aria-hidden="true">
+
+    <!-- ===== SECTION RECOMMANDATIONS ===== -->
+    <section class="section" aria-labelledby="titre-reco">
+      <div class="section-header">
+        <h2 class="section-title" id="titre-reco">Nos <span>recommandations</span></h2>
+        <a href="links/index_recommandations.html" class="see-all" aria-label="Voir toutes les recommandations">Tout voir</a>
+      </div>
+
+      <ul class="film-grid" aria-label="Films recommandés par AfterWatch">
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Past Lives">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Past Lives</a></p>
+            <p class="film-card-meta">Romance · 2023</p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film The Zone of Interest">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">La Zone d'intérêt</a></p>
+            <p class="film-card-meta">Drame · 2023</p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Maestro">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Maestro</a></p>
+            <p class="film-card-meta">Biopic · 2023</p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film American Fiction">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">American Fiction</a></p>
+            <p class="film-card-meta">Comédie · 2023</p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Society of the Snow">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">La Société des neiges</a></p>
+            <p class="film-card-meta">Survival · 2023</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <hr class="divider" aria-hidden="true">
+
+    <!-- ===== SECTION MES FILMS ===== -->
+    <section class="section" aria-labelledby="titre-mes-films">
+      <div class="section-header">
+        <h2 class="section-title" id="titre-mes-films">Mes <span>films</span> vus</h2>
+        <a href="links/index_mes_films.html" class="see-all" aria-label="Voir tous mes films vus">Tout voir</a>
+      </div>
+
+      <ul class="film-grid" aria-label="Derniers films que j'ai vus">
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Barbie">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Barbie</a></p>
+            <p class="film-card-meta">Comédie · 2023</p>
+            <p class="star-rating" aria-label="Note : 4 étoiles sur 5">
+              <span aria-hidden="true">★★★★☆</span>
+            </p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film The Holdovers">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">The Holdovers</a></p>
+            <p class="film-card-meta">Comédie dramatique · 2023</p>
+            <p class="star-rating" aria-label="Note : 5 étoiles sur 5">
+              <span aria-hidden="true">★★★★★</span>
+            </p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Saltburn">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Saltburn</a></p>
+            <p class="film-card-meta">Thriller · 2023</p>
+            <p class="star-rating" aria-label="Note : 3 étoiles sur 5">
+              <span aria-hidden="true">★★★☆☆</span>
+            </p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Priscilla">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Priscilla</a></p>
+            <p class="film-card-meta">Biopic · 2023</p>
+            <p class="star-rating" aria-label="Note : 4 étoiles sur 5">
+              <span aria-hidden="true">★★★★☆</span>
+            </p>
+          </div>
+        </li>
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="img/0199399.jpg.webp" alt="Affiche du film Napoleon">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="links/index_infos_film.html">Napoléon</a></p>
+            <p class="film-card-meta">Épique · 2023</p>
+            <p class="star-rating" aria-label="Note : 3 étoiles sur 5">
+              <span aria-hidden="true">★★★☆☆</span>
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="site-logo-text">AFTERWATCH</p>
+        <p>Votre compagnon cinéma : suivez les sorties, gérez votre liste et découvrez les meilleures recommandations.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul class="footer-nav" role="list">
+          <li><a href="links/index_a_l_affiche.html">À l'affiche</a></li>
+          <li><a href="links/index_futures_sorties.html">Futures sorties</a></li>
+          <li><a href="links/index_recommandations.html">Recommandations</a></li>
+          <li><a href="links/index_mes_films.html">Mes films</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Compte</h3>
+        <ul class="footer-nav" role="list">
+          <li><a href="links/form_co_js.html">Connexion</a></li>
+          <li><a href="links/form_inscr_js.html">Inscription</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>AfterWatch</h3>
+        <ul class="footer-nav" role="list">
+          <li><a href="#">À propos</a></li>
+          <li><a href="links/form_contact_js.html">Nous contacter</a></li>
+          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Déclaration d'accessibilité</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 AfterWatch. Tous droits réservés.</span>
+      <span>Site conforme RGAA 4.1</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

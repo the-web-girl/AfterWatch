@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AfterWatch — Films actuellement à l'affiche dans les cinémas français.">
+  <title>À l'affiche — AfterWatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <a class="skip-nav" href="#contenu-principal">Aller au contenu principal</a>
+
+  <!-- ===== EN-TÊTE ===== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="../index_accueil.html" class="site-logo" aria-label="AfterWatch — Retour à l'accueil">
+        <img src="../img/afterwatch_logo.png" alt="AfterWatch" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="site-logo-text" style="display:none">AFTERWATCH</span>
+      </a>
+
+      <form class="search-form" role="search" action="#" method="get">
+        <label for="recherche">Rechercher un film</label>
+        <input type="search" id="recherche" name="q" class="search-input" placeholder="Titre, réalisateur…" autocomplete="off">
+        <button type="submit" class="search-btn" aria-label="Lancer la recherche">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </form>
+
+      <nav class="auth-links" aria-label="Connexion et inscription">
+        <a href="../links/form_co_js.html" class="btn btn-outline">Connexion</a>
+        <a href="../links/form_inscr_js.html" class="btn btn-primary">Inscription</a>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+    <ul class="nav-list" role="list">
+      <li><a href="../index_accueil.html">Accueil</a></li>
+      <li><a href="index_a_l_affiche.html" aria-current="page">À l'affiche</a></li>
+      <li><a href="index_futures_sorties.html">Futures sorties</a></li>
+      <li><a href="index_recommandations.html">Recommandations</a></li>
+      <li><a href="index_mes_films.html">Mes films</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTENU PRINCIPAL ===== -->
+  <main id="contenu-principal" class="main-content">
+
+    <!-- Bannière de page -->
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h1>À <span>l'affiche</span></h1>
+        <p>Les films actuellement projetés dans les cinémas</p>
+      </div>
+    </div>
+
+    <!-- Fil d'Ariane -->
+    <nav aria-label="Fil d'Ariane">
+      <ol class="breadcrumb">
+        <li><a href="../index_accueil.html">Accueil</a></li>
+        <li><span aria-current="page">À l'affiche</span></li>
+      </ol>
+    </nav>
+
+    <!-- Films -->
+    <section class="section" aria-labelledby="titre-affiche">
+      <h2 class="section-title" id="titre-affiche">Actuellement <span>à l'affiche</span></h2>
+
+      <ul class="film-list-full" aria-label="Liste des films à l'affiche" style="margin-top:1.5rem">
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Dune : Deuxième Partie" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Dune : Deuxième Partie</a></p>
+            <p class="film-card-meta">Science-fiction · 2024</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Poor Things" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Poor Things</a></p>
+            <p class="film-card-meta">Fantastique · 2023</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Anatomie d'une chute" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Anatomie d'une chute</a></p>
+            <p class="film-card-meta">Drame · 2023</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Oppenheimer" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Oppenheimer</a></p>
+            <p class="film-card-meta">Biopic · 2023</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Mais qu'est-ce que j'ai fait au bon Dieu ?" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Mais qu'est-ce que j'ai fait au bon Dieu ?</a></p>
+            <p class="film-card-meta">Comédie · 2014</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Past Lives" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Past Lives</a></p>
+            <p class="film-card-meta">Romance · 2023</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film The Holdovers" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">The Holdovers</a></p>
+            <p class="film-card-meta">Comédie dramatique · 2023</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film La Zone d'intérêt" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">La Zone d'intérêt</a></p>
+            <p class="film-card-meta">Drame · 2023</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Saltburn" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Saltburn</a></p>
+            <p class="film-card-meta">Thriller · 2023</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Napoléon" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Napoléon</a></p>
+            <p class="film-card-meta">Épique · 2023</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Maestro" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Maestro</a></p>
+            <p class="film-card-meta">Biopic · 2023</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film American Fiction" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">American Fiction</a></p>
+            <p class="film-card-meta">Comédie · 2023</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film La Société des neiges" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">La Société des neiges</a></p>
+            <p class="film-card-meta">Survival · 2023</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Priscilla" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Priscilla</a></p>
+            <p class="film-card-meta">Biopic · 2023</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Barbie" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Barbie</a></p>
+            <p class="film-card-meta">Comédie · 2023</p>
+            <span class="badge badge-affiche">À l'affiche</span>
+          </div>
+        </li>
+
+      </ul>
+
+      <!-- Pagination -->
+      <nav aria-label="Pagination des films à l'affiche">
+        <ul class="pagination">
+          <li><span aria-label="Page précédente indisponible" aria-hidden="true">‹</span></li>
+          <li><a href="#" aria-current="page" class="current" aria-label="Page 1">1</a></li>
+          <li><a href="#" aria-label="Page 2">2</a></li>
+          <li><a href="#" aria-label="Page 3">3</a></li>
+          <li><span>…</span></li>
+          <li><a href="#" aria-label="Page 8">8</a></li>
+          <li><a href="#" aria-label="Page suivante">›</a></li>
+        </ul>
+      </nav>
+    </section>
+
+  </main>
+
+  <!-- ===== PIED DE PAGE ===== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="site-logo-text">AFTERWATCH</p>
+        <p>Votre compagnon cinéma : suivez les sorties, gérez votre liste et découvrez les meilleures recommandations.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul class="footer-nav" role="list">
+          <li><a href="index_a_l_affiche.html">À l'affiche</a></li>
+          <li><a href="index_futures_sorties.html">Futures sorties</a></li>
+          <li><a href="index_recommandations.html">Recommandations</a></li>
+          <li><a href="index_mes_films.html">Mes films</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Compte</h3>
+        <ul class="footer-nav" role="list">
+          <li><a href="form_co_js.html">Connexion</a></li>
+          <li><a href="form_inscr_js.html">Inscription</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>AfterWatch</h3>
+        <ul class="footer-nav" role="list">
+          <li><a href="#">À propos</a></li>
+          <li><a href="form_contact_js.html">Nous contacter</a></li>
+          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Déclaration d'accessibilité</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 AfterWatch. Tous droits réservés.</span>
+      <span>Site conforme RGAA 4.1</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

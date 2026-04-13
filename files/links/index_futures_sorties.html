@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AfterWatch — Futures sorties cinéma : découvrez les films à venir.">
+  <title>Futures sorties — AfterWatch</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <a class="skip-nav" href="#contenu-principal">Aller au contenu principal</a>
+
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="../index_accueil.html" class="site-logo" aria-label="AfterWatch — Retour à l'accueil">
+        <img src="../img/afterwatch_logo.png" alt="AfterWatch" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="site-logo-text" style="display:none">AFTERWATCH</span>
+      </a>
+      <form class="search-form" role="search" action="#" method="get">
+        <label for="recherche">Rechercher un film</label>
+        <input type="search" id="recherche" name="q" class="search-input" placeholder="Titre, réalisateur…" autocomplete="off">
+        <button type="submit" class="search-btn" aria-label="Lancer la recherche">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </button>
+      </form>
+      <nav class="auth-links" aria-label="Connexion et inscription">
+        <a href="form_co_js.html" class="btn btn-outline">Connexion</a>
+        <a href="form_inscr_js.html" class="btn btn-primary">Inscription</a>
+      </nav>
+      <button class="nav-toggle" id="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true" focusable="false"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <nav id="main-nav" class="main-nav" aria-label="Navigation principale">
+    <ul class="nav-list" role="list">
+      <li><a href="../index_accueil.html">Accueil</a></li>
+      <li><a href="index_a_l_affiche.html">À l'affiche</a></li>
+      <li><a href="index_futures_sorties.html" aria-current="page">Futures sorties</a></li>
+      <li><a href="index_recommandations.html">Recommandations</a></li>
+      <li><a href="index_mes_films.html">Mes films</a></li>
+    </ul>
+  </nav>
+
+  <main id="contenu-principal" class="main-content">
+
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <h1>Futures <span>sorties</span></h1>
+        <p>Les films attendus prochainement au cinéma</p>
+      </div>
+    </div>
+
+    <nav aria-label="Fil d'Ariane">
+      <ol class="breadcrumb">
+        <li><a href="../index_accueil.html">Accueil</a></li>
+        <li><span aria-current="page">Futures sorties</span></li>
+      </ol>
+    </nav>
+
+    <section class="section" aria-labelledby="titre-sorties">
+      <h2 class="section-title" id="titre-sorties">Bientôt <span>au cinéma</span></h2>
+
+      <ul class="film-list-full" aria-label="Liste des futures sorties cinéma" style="margin-top:1.5rem">
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Furiosa : une saga Mad Max" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Furiosa : une saga Mad Max</a></p>
+            <p class="film-card-meta">Action · Mai 2024</p>
+            <span class="badge badge-sortie">Prochainement</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Vice-Versa 2" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Vice-Versa 2</a></p>
+            <p class="film-card-meta">Animation · Juin 2024</p>
+            <span class="badge badge-sortie">Prochainement</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Alien : Romulus" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Alien : Romulus</a></p>
+            <p class="film-card-meta">Horreur · Août 2024</p>
+            <span class="badge badge-sortie">Prochainement</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Beetlejuice Beetlejuice" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Beetlejuice Beetlejuice</a></p>
+            <p class="film-card-meta">Comédie fantastique · Sept. 2024</p>
+            <span class="badge badge-sortie">Prochainement</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Joker : Folie à Deux" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Joker : Folie à Deux</a></p>
+            <p class="film-card-meta">Drame · Oct. 2024</p>
+            <span class="badge badge-sortie">Prochainement</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Venom : The Last Dance" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Venom : The Last Dance</a></p>
+            <p class="film-card-meta">Super-héros · Oct. 2024</p>
+            <span class="badge badge-sortie">Prochainement</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Gladiator II" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Gladiator II</a></p>
+            <p class="film-card-meta">Péplum · Nov. 2024</p>
+            <span class="badge badge-sortie">Prochainement</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Wicked" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Wicked</a></p>
+            <p class="film-card-meta">Comédie musicale · Nov. 2024</p>
+            <span class="badge badge-sortie">Prochainement</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Moana 2" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Vaiana 2</a></p>
+            <p class="film-card-meta">Animation · Nov. 2024</p>
+            <span class="badge badge-sortie">Prochainement</span>
+          </div>
+        </li>
+
+        <li class="film-card">
+          <div class="film-card-img">
+            <img src="../img/0199399.jpg.webp" alt="Affiche du film Mufasa : Le Roi Lion" loading="lazy">
+          </div>
+          <div class="film-card-body">
+            <p class="film-card-title"><a href="index_infos_film.html">Mufasa : Le Roi Lion</a></p>
+            <p class="film-card-meta">Animation · Déc. 2024</p>
+            <span class="badge badge-sortie">Prochainement</span>
+          </div>
+        </li>
+
+      </ul>
+
+      <nav aria-label="Pagination des futures sorties">
+        <ul class="pagination">
+          <li><span aria-hidden="true">‹</span></li>
+          <li><a href="#" aria-current="page" class="current" aria-label="Page 1">1</a></li>
+          <li><a href="#" aria-label="Page 2">2</a></li>
+          <li><a href="#" aria-label="Page 3">3</a></li>
+          <li><a href="#" aria-label="Page suivante">›</a></li>
+        </ul>
+      </nav>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="site-logo-text">AFTERWATCH</p>
+        <p>Votre compagnon cinéma : suivez les sorties, gérez votre liste et découvrez les meilleures recommandations.</p>
+      </div>
+      <div class="footer-col">
+        <h3>Navigation</h3>
+        <ul class="footer-nav" role="list">
+          <li><a href="index_a_l_affiche.html">À l'affiche</a></li>
+          <li><a href="index_futures_sorties.html">Futures sorties</a></li>
+          <li><a href="index_recommandations.html">Recommandations</a></li>
+          <li><a href="index_mes_films.html">Mes films</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Compte</h3>
+        <ul class="footer-nav" role="list">
+          <li><a href="form_co_js.html">Connexion</a></li>
+          <li><a href="form_inscr_js.html">Inscription</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>AfterWatch</h3>
+        <ul class="footer-nav" role="list">
+          <li><a href="#">À propos</a></li>
+          <li><a href="form_contact_js.html">Nous contacter</a></li>
+          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="#">Forum</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2024 AfterWatch. Tous droits réservés.</span>
+      <span>Site conforme RGAA 4.1</span>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
